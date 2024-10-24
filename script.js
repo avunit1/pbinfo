@@ -19,7 +19,7 @@ document.getElementById('pbinfoForm').addEventListener('submit', function (event
 
     // Get the username input by the user
     const username = document.getElementById('username').value;
-    const url = `https://cors-anywhere.herokuapp.com/https://www.pbinfo.ro/profil/${username}`; // URL with the CORS proxy
+    const url = `https://corsproxy.io/?https://www.pbinfo.ro/profil/${username}`; // URL with the CORS proxy fute m as in el de proxy de cacat
 
     // Get result content element
     const resultContent = document.querySelector('.result-content');
