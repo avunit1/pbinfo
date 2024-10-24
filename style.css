@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Harmonia';
+    src: url('harmonia.ttf') format('truetype'); /* Adjust the path if necessary */
+}
+
+body {
+    background-color: #000000; /* Set background color to black */
+    color: #ffffff; /* Set text color to white */
+    font-family: 'Harmonia', sans-serif; /* Set the font family to Harmonia */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Arrange elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+h1 {
+    color: #ffffff; /* Set the text color to white */
+    font-size: 4rem; /* Set font size to 4 rem */
+    text-align: center; /* Center the title horizontally */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+label {
+    display: block; /* Ensure the label is displayed as a block element */
+    margin-bottom: 10px; /* Add some space below the label */
+    color: #ffffff; /* Set label text color to white */
+}
+
+.custom-input {
+    background-color: #000000; /* Input background color */
+    border: 4px solid #ffffff; /* Input border color */
+    color: #ffffff; /* Input text color */
+    padding: 10px; /* Padding for the input */
+    font-size: 1rem; /* Font size for input text */
+    font-family: 'Harmonia', sans-serif; /* Set font family to Harmonia */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Maximum width */
+    box-sizing: border-box; /* Include padding in width */
+    margin-bottom: 10px; /* Space below input */
+}
+
+.custom-button {
+    background-color: #000000; /* Button background color */
+    border: 4px solid #ffffff; /* Button border color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px; /* Padding for button */
+    font-size: 1rem; /* Font size for button text */
+    font-family: 'Harmonia', sans-serif; /* Set font family to Harmonia */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Transition effect for background color */
+    margin-bottom: 20px; /* Space below button */
+}
+
+.custom-button:hover {
+    background-color: #ffffff; /* Change background on hover */
+    color: #000000; /* Change text color on hover */
+}
+
+.result-box {
+    background-color: #000000; /* Box background color */
+    border: 4px solid #ffffff; /* Box border color */
+    width: 70vw; /* Box width */
+    height: 20vh; /* Box height */
+    margin: 20px auto; /* Center the box */
+    padding: 10px; /* Padding inside the box */
+    box-sizing: border-box; /* Include padding in width/height */
+    text-align: center; /* Center text horizontally */
+}
+
+.result-title {
+    color: #ffffff; /* Title color */
+    font-family: 'Harmonia', sans-serif; /* Title font */
+    margin: 0; /* Remove margin */
+    font-size: 2rem; /* Title font size */
+}
+
+.result-content {
+    color: #404040; /* Content color */
+    font-family: 'Harmonia', sans-serif; /* Content font */
+    font-size: 1.5rem; /* Content font size */
+    margin-top: 10px; /* Space above content */
+}
+
+/* Flash animation for result content */
+@keyframes flash {
+    0%, 100% {
+        color: #404040; /* Starting color */
+    }
+    50% {
+        color: #ffffff; /* Ending color */
+    }
+}
