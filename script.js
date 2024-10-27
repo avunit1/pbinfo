@@ -50,18 +50,18 @@ document.getElementById('pbinfoForm').addEventListener('submit', function (event
                         resultContent.style.color = '#50C878'; 
                     } else {
                         console.log('No number found in the link text.');
-                        resultContent.innerText = 'Numărul de probleme nu a fost găsit.';
-                        resultContent.style.color = '#404040'; 
+                        resultContent.innerText = 'Eroare link';
+                        resultContent.style.color = '#FF2400'; 
                     }
                 } else {
                     console.log('No link found for problems.');
-                    resultContent.innerText = 'Nu s-au găsit probleme rezolvate.';
-                    resultContent.style.color = '#404040'; 
+                    resultContent.innerText = 'Eroare probleme';
+                    resultContent.style.color = '#FF2400'; 
                 }
             } else {
                 console.error('There was an error fetching the profile. Status:', request.status);
-                resultContent.innerText = 'Eroare la obținerea profilului.';
-                resultContent.style.color = '#404040'; 
+                resultContent.innerText = 'Eroare profil';
+                resultContent.style.color = '#FF2400'; 
             }
         }
     };
