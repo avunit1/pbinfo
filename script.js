@@ -60,7 +60,7 @@ document.getElementById('pbinfoForm').addEventListener('submit', function (event
                 }
             } else {
                 console.error('There was an error fetching the profile. Status:', request.status);
-                resultContent.innerText = 'Eroare profil';
+                resultContent.innerText = 'Eroare profil'; // pentru utilizatorul "fif" returneaza tot timpul eroare deoarece nu este logat
                 resultContent.style.color = '#FF2400'; 
             }
         }
