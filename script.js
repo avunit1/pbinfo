@@ -47,7 +47,13 @@ document.getElementById('pbinfoForm').addEventListener('submit', function (event
                     if (numberOfProblems) {
                         console.log('Number of Probleme Rezolvate: ', numberOfProblems[0]);
                         resultContent.innerText = numberOfProblems[0]; 
-                        resultContent.style.color = '#50C878'; 
+                        
+                        // Change color based on username
+                        if (username.toLowerCase() === 'avunit') {
+                            resultContent.style.color = '#d4af37'; 
+                        } else {
+                            resultContent.style.color = '#50C878'; 
+                        }
                     } else {
                         console.log('No number found in the link text.');
                         resultContent.innerText = 'Eroare link';
