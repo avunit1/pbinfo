@@ -30,25 +30,17 @@ document.getElementById('pbinfoForm').addEventListener('submit', function (event
     request.onreadystatechange = function () {
         if (request.readyState === 4) { 
             resultContent.style.animation = 'none'; 
-
             if (request.status === 200) { 
                 const responseText = request.responseText;
-
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(responseText, 'text/html');
-
                 const problemLink = doc.querySelector('a[href*="profil/' + username + '/probleme"]');
-
                 if (problemLink) {
-
                     const textContent = problemLink.textContent; 
                     const numberOfProblems = textContent.match(/(\d+)/); 
-
                     if (numberOfProblems) {
                         console.log('Number of Probleme Rezolvate: ', numberOfProblems[0]);
                         resultContent.innerText = numberOfProblems[0]; 
-                        
-                        // Change color based on username
                         if (username.toLowerCase() === 'avunit') {
                             resultContent.style.color = '#d4af37'; 
                         } else {
@@ -71,4 +63,8 @@ document.getElementById('pbinfoForm').addEventListener('submit', function (event
             }
         }
     };
+});
+
+document.getElementById('classButton').addEventListener('click', function () {
+    window.location.href = 'clasa9a.html';
 });

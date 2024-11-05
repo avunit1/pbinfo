@@ -13,7 +13,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden; 
+    overflow:auto; 
 }
 
 #backgroundImage {
@@ -78,8 +78,8 @@ label {
     font-family: 'Harmonia', sans-serif; 
     cursor: pointer; 
     transition: background-color 0.3s; 
-    margin-bottom: 0px; 
-    width: 40vw;
+    margin-bottom: 2vh; 
+    width: 80vw;
 }
 
 .custom-button:hover {
@@ -88,15 +88,24 @@ label {
 }
 
 .result-box {
-    margin-top: 0px; 
+    margin-top: 0px;
     background-color: #000000;
     border: 3px solid #ffffff;
     border-radius: 7px;
     width: 80vw;
-    height: 20vh;
+    height: 40vh; 
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
+    overflow-y: auto; 
+}
+
+.result-content {
+    color: #404040;
+    font-family: 'Harmonia', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    white-space: pre-wrap; 
 }
 
 .result-title {
@@ -106,13 +115,6 @@ label {
     font-size: 2rem; 
 }
 
-.result-content {
-    color: #404040; 
-    font-family: 'Harmonia', sans-serif; 
-    font-size: 1.5rem; 
-    margin-top: 10px; 
-}
-
 .footer {
     font-family: 'Harmonia', sans-serif; 
     opacity: 1; 
@@ -120,6 +122,14 @@ label {
     text-align: center; 
     margin-top: 10vh; 
     color: #ffffff; 
+}
+
+.user-name {
+    color: #ffffff; 
+}
+
+.problem-count {
+    color: #50c878; 
 }
 
 @keyframes flash {
@@ -138,4 +148,10 @@ label {
     to {
         opacity: 1;
     }
+}
+
+.loading {
+    color: #404040; 
+    animation: flash 0.5s infinite; 
+    margin: 10px 0;
 }
