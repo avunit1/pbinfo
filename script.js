@@ -16,7 +16,7 @@ document.getElementById('pbinfoForm').addEventListener('submit', function (event
     event.preventDefault(); 
 
     const username = document.getElementById('username').value;
-    const url = `https://proxy.cors.sh/?https://www.pbinfo.ro/profil/${username}`;
+    const url = `https://corsproxy.io/https://www.pbinfo.ro/profil/${username}`;
 
     const resultContent = document.querySelector('.result-content');
 
