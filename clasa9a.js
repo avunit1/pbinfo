@@ -35,7 +35,7 @@ window.addEventListener('load', function() {
 });
 
 function fetchProblemData(username, name, results, callback) {
-    const url = `https://proxy.cors.sh/?https://www.pbinfo.ro/profil/${username}`;
+    const url = `https://crossorigin.me/?https://www.pbinfo.ro/profil/${username}`;
 
     var request = makeHttpObject();
     request.open("GET", url, true);
